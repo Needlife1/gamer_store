@@ -1,0 +1,116 @@
+.container-lines {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 24px;
+  overflow: hidden;
+
+  // @media screen and (min-width: 768px) {
+  //   padding-bottom: 24px;
+  // }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 16px;
+  }
+}
+
+.line-b1 {
+  margin-left: -900px;
+  height: 8px;
+  border-bottom: 1px solid #7be34a;
+  border-right: 1px solid #7be34a;
+  background-color: inherit;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.line-b2 {
+  height: 8px;
+  margin-right: -8px;
+  margin-left: -900px;
+  border-bottom: 1px solid #28780d;
+
+  background-color: inherit;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+
+  @media screen and (min-width: 768px) {
+    // $lineShink: 8px;
+    height: 8px;
+    margin-right: -8px;
+  }
+}
+
+.line-b3 {
+  width: 105%;
+  height: 8px;
+  border-top: 1px solid #7be34a;
+
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  background-color: inherit;
+
+  @media screen and (min-width: 768px) {
+    // $lineShink: 8px;
+    height: 8px;
+  }
+}
+
+.line-b4 {
+  width: 105%;
+  height: 8px;
+  margin-left: 8px;
+  border-top: 1px solid #28780d;
+  border-left: 1px solid #28780d;
+
+  // box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  background-color: inherit;
+
+  @media screen and (min-width: 768px) {
+    // $lineShink: 8px;
+    height: 19px;
+    margin-left: 8px;
+  }
+}
+
+.line-left {
+  margin-left: calc(((100% - 320px) / 2) + 20px);
+
+  @media screen and (min-width: 480px) {
+    margin-left: calc(((100% - 480px) / 2) + 102px);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: calc(((100% - 768px) / 2) + 142px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: calc(((100% - 1280px) / 2) + 142px);
+  }
+}
+
+.line-right {
+  width: 100%;
+}
+
+.lines-title-name {
+  display: inline-block;
+  white-space: nowrap;
+
+  @media screen and (max-width: 479px) {
+    margin-right: 12px;
+    margin-left: 63px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 65px;
+    margin-left: 0px;
+  }
+
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.0769;
+  color: #ffffff;
+  @media screen and (min-width: 480px) {
+    font-size: 44px;
+    line-height: 1.1786;
+  }
+}

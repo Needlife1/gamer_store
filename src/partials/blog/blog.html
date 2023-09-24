@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="/src/sass/index.scss" />
+    <script type="module" src="/src/index.js"></script>
+  </head>
+  <body>
+    <include src="./partials/main/header.html"></include>
+    <!-- BLOG -->
+    <section class="blog section">
+      <div>
+        <div class="container-lines blog-lines">
+          <div class="line-left">
+            <h1 class="lines-title-name">Blog</h1>
+            <div class="line-b1"></div>
+            <div class="line-b2"></div>
+          </div>
+          <div class="line-right">
+            <div class="line-b3"></div>
+            <div class="line-b4"></div>
+          </div>
+        </div>
+        <ul class="container blog__list blog__img">
+          <li class="blog__item">
+            <h3 class="blog__guide">
+              Guide to Picking The Right Gaming Headset
+            </h3>
+
+            <div class="blog__thumb">
+              <picture>
+                <source
+                  srcset="
+                    /src/images/blog/des-1-1x.jpg 1x,
+                    /src/images/blog/des-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/blog/tab-1-1x.jpg 1x,
+                    /src/images/blog/tab-1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /src/images/blog/mob-1-1x.jpg 1x,
+                    /src/images/blog/mob-1-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/src/images/blog/1.jpg"
+                  alt="геймер перед монітором"
+                  width="320"
+                />
+              </picture>
+
+              <div class="blog__description">
+                <p class="blog__author">By Ray Ian Ampoloquio</p>
+                <p class="blog__update">Updated on September 21, 2022</p>
+              </div>
+
+              <p class="blog-text">
+                Learn how to choose an amazing gaming headset with this
+                checklist of just 9 surprisingly simple steps.
+                <br />
+                Gaming headsets offer a handy and practical solution to any and
+                all of your gaming audio needs. But, as with any kind of ...
+              </p>
+              <a href="./blog_article.html" class="blog__nav">Learn more</a>
+            </div>
+          </li>
+
+          <li class="blog__item">
+            <h3 class="blog__guide">
+              Mic Monitoring: What Is It and How It Is Relevant to Gaming
+            </h3>
+            <div class="blog__thumb">
+              <picture>
+                <source
+                  srcset="
+                    /src/images/blog/des-2-1x.jpg 1x,
+                    /src/images/blog/des-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/blog/tab-2-1x.jpg 1x,
+                    /src/images/blog/tab-2-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /src/images/blog/mob-2-1x.jpg 1x,
+                    /src/images/blog/mob-2-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/src/images/blog/2.jpg"
+                  alt="геймер перед монітором"
+                  width="320"
+                />
+              </picture>
+
+              <div class="blog__description desk">
+                <p class="blog__author">By Gab L</p>
+                <p class="blog__update">Updated on September 10, 2022</p>
+              </div>
+
+              <p class="blog-text">
+                An explanation and exploration of microphone monitoring — its
+                benefits and how you can start using one of the most underrated
+                features today ...
+              </p>
+              <a href="./blog_article.html" class="blog__nav">Learn more</a>
+            </div>
+          </li>
+
+          <li class="blog__item">
+            <h3 class="blog__guide">How to Choose the Right Gaming Mouse</h3>
+            <div class="blog__thumb">
+              <picture>
+                <source
+                  srcset="
+                    /src/images/blog/des-3-1x.jpg 1x,
+                    /src/images/blog/des-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/blog/tab-3-1x.jpg 1x,
+                    /src/images/blog/tab-3-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /src/images/blog/mob-3-1x.jpg 1x,
+                    /src/images/blog/mob-3-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/src/images/blog/3.jpg"
+                  alt="геймерські навушники"
+                  width="320"
+                />
+              </picture>
+
+              <div class="blog__description">
+                <p class="blog__author">By Michael Crider</p>
+                <p class="blog__update">Updated on September 2, 2022</p>
+              </div>
+
+              <p class="blog-text">
+                A good mouse can make a big difference when playing your
+                favorite games. Here’s what you need to know about grip styles,
+                types of gaming mice, technical specs, and more, before
+                purchasing a new gaming mouse ...
+              </p>
+              <a href="./blog_article.html" class="blog__nav">Learn more</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="blog__point">
+        <svg width="104" height="16" class="blog__main">
+          <use href="/src/icon/symbol-defs.svg#pages_main"></use>
+        </svg>
+      </div>
+    </section>
+
+    <include src="./partials/main/footer.html"></include>
+  </body>
+</html>

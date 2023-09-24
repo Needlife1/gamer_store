@@ -1,0 +1,28 @@
+$mainFont: 'Roboto';
+$secondaryFont: 'Open Sans';
+
+:root {
+  --primary-text-color: #86e543;
+  --secondary-text-color: linear-gradient(
+    270deg,
+    #03fe8f 4.61%,
+    #ebdcff 57.91%,
+    #ff98f3 92.2%
+  );
+  --white-text-color: #ffffff;
+  --gray-text-color: #8d9289;
+  --main-color: #01383a;
+  --main-footer-color: #001414;
+  --galery-top-border: #7be34a;
+  --galery-bottom-border: #28780d;
+  --galery-cart-box-shadow: rgba(134, 229, 67, 0.2);
+  --header-box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
+    0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+  --button-box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+    0px 4px 10px rgba(255, 255, 255, 0.1);
+  --modal-background: rgba(0, 20, 20, 0.8);
+  --glow-color: rgb(176, 255, 184);
+  --glow-spread-color: rgba(231, 206, 255);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: #86e543;
+}

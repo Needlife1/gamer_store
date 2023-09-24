@@ -1,0 +1,39 @@
+label {
+  display: block;
+}
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+
+section {
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-bottom: 120px;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    width: 1280px;
+  }
+}

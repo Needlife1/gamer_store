@@ -1,0 +1,303 @@
+.sale {
+  background-image: url(/src/images/sale/background-mob-1x.jpg);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/sale/background-tab-1x.jpg);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(/src/images/sale/background-dt-1x.jpg);
+  }
+}
+
+.sale-cards {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 80px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+}
+
+.mob-is-hidden {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.sale-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+  padding-left: 80px;
+  margin-bottom: 4px;
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 1.18;
+    padding-left: 62px;
+  }
+}
+
+.sale-list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    row-gap: 32px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 20px;
+    row-gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.sale-item {
+  padding-bottom: 12px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+ }
+
+.sale-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.18;
+  color: #86e543;
+  max-width: 261px;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+.product-prices {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.old-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration-line: line-through;
+  color: #8d9289;
+}
+
+.new-price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: #86e543;
+}
+
+.sale-btn {
+  width: 153px;
+  height: 51px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  padding: 16px 0;
+  border-radius: 16px;
+  background-color: #ffffff;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #01383a;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.18;
+    width: 195px;
+    height: 65px;
+  }
+}
+
+.sale-btn:hover,
+.sale-btn:focus {
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+    0px 4px 10px rgba(134, 229, 67, 0.1);
+}
+
+// .lines {
+//   margin-bottom: 24px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   @media screen and (min-width: 1280px) {
+//     margin-bottom: 16px;
+//   }
+// }
+
+// .line-top {
+//   border-bottom: 1px solid #7be34a;
+//   border-right: 1px solid #7be34a;
+//   width: 50%;
+//   height: 8px;
+//   @media screen and (min-width: 1280px) {
+//     width: 20%;
+//   }
+// }
+
+// .line-bottom {
+//   border-top: 1px solid #7be34a;
+//   width: 50%;
+//   // margin-right: 0;
+//   margin-left: 0;
+//   @media screen and (min-width: 1280px) {
+//     width: 80%;
+//   }
+// }
+
+// .line-top-2 {
+//   border-bottom: 1px solid #28780d;
+//   border-right: 1px solid #28780d;
+//   width: 51%;
+//   height: 8px;
+//   @media screen and (min-width: 1280px) {
+//     width: 21%;
+//   }
+// }
+
+// .line-bottom-2 {
+//   border-top: 1px solid #28780d;
+//   width: 49%;
+//   // margin-right: 0;
+//   margin-left: 0;
+//   @media screen and (min-width: 1280px) {
+//     width: 79%;
+//   }
+// }
+
+// .container-lines {
+//   display: flex;
+//   align-items: flex-end;
+//   padding-bottom: 24px;
+//   overflow: hidden;
+//   // @media screen and (min-width: 768px) {
+//   //   padding-bottom: 24px;
+//   // }
+//    @media screen and (min-width: 1280px) {
+//     padding-bottom: 16px;
+//   }
+// }
+
+// .line-b1 {
+//   margin-left: -500px;
+//   height: 8px;
+//   border-bottom: 1px solid #7BE34A;
+//   border-right: 1px solid #7BE34A;
+//   background-color: inherit;
+
+//   @media screen and (min-width: 768px) {
+//     height: 19px;
+//   }
+// }
+
+// .line-b2 {
+//   height: 8px;
+//   margin-right: -8px;
+//   margin-left: -500px;
+//   border-bottom: 1px solid #28780D;
+
+//   background-color: inherit;
+//   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+
+//   @media screen and (min-width: 768px) {
+//     // $lineShink: 8px;
+//     height: 8px;
+//     margin-right: -8px;
+//   }
+// }
+
+// .line-b3 {
+//   width: 105%;
+//   height: 8px;
+//   border-top: 1px solid #7BE34A;
+
+//   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+//   background-color: inherit;
+
+//   @media screen and (min-width: 768px) {
+//     // $lineShink: 8px;
+//     height: 8px;
+//   }
+// }
+
+// .line-b4 {
+//   width: 105%;
+//   height: 8px;
+//   margin-left: 8px;
+//   border-top: 1px solid #28780D;
+//   border-left: 1px solid #28780D;
+
+//   // box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+//   background-color: inherit;
+
+//   @media screen and (min-width: 768px) {
+//     // $lineShink: 8px;
+//     height: 19px;
+//     margin-left: 8px;
+//   }
+// }
+
+// .line-left {
+//   margin-left: calc(((100% - 320px) / 2) + 20px);
+
+//   @media screen and (min-width: 480px) {
+//     margin-left: calc(((100% - 480px) / 2) + 102px);
+//   }
+
+//    @media screen and (min-width: 768px) {
+//     margin-left: calc(((100% - 768px) / 2) + 142px);
+//   }
+
+//    @media screen and (min-width: 1280px) {
+//     margin-left: calc(((100% - 1280px) / 2) + 142px);
+//   }
+// }
+
+// .line-right {
+//   width: 100%;
+// }
+
+// .lines-title-name {
+//   display: inline-block;
+//   white-space: nowrap;
+//   @media screen and (max-width: 479px) {
+//   margin-right: 12px;
+//   margin-left: 63px;
+//   }
+//   @media screen and (min-width: 768px) {
+//   margin-right: 65px;
+//   margin-left: 0px;
+//   }
+//   font-size: 26px;
+//   font-weight: 600;
+//   line-height: 1.0769;
+//   color: #FFFFFF;;
+//   @media screen and (min-width: 480px) {
+//     font-size: 44px;
+//     line-height: 1.1786;
+//   }
+// }

@@ -1,0 +1,125 @@
+.hero {
+  padding-top: 104px;
+  height: 601px;
+  background-color: #01383a;
+
+  background-image: url(/src/images/hero/Hero.png),
+    url(/src/images/hero/vector.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 136px;
+    height: 860px;
+    background-position: top;
+  }
+}
+
+.overlay {
+  position: relative;
+  display: flex;
+}
+
+.thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50px);
+  mix-blend-mode: luminosity;
+  width: 304px;
+  height: 472px;
+
+  @media screen and(min-width: 768px) {
+    width: 379px;
+    height: 616px;
+    top: 33px;
+    right: 0;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 668px;
+    height: 652px;
+    top: 0;
+    right: 78px;
+  }
+}
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding-top: 180px;
+
+  // @media screen and (min-width: 320px) and (max-width: 767px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+  @media screen and(min-width: 768px) {
+    margin: 0;
+    padding-top: 154px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding-top: 182px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.19;
+  text-align: center;
+  color: #fff;
+  width: 247px;
+  margin-bottom: 25px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and(min-width: 768px) {
+    font-size: 56px;
+    line-height: 1.18;
+    margin-bottom: 94px;
+    text-align: start;
+    min-width: 388px;
+  }
+  @media screen and(min-width: 1280px) {
+    font-size: 64px;
+    line-height: 1.17;
+
+    min-width: 436px;
+    margin-bottom: 40px;
+  }
+}
+
+.link {
+  display: block;
+  align-items: center;
+  width: 176px;
+  height: 51px;
+  background-color: #86e543;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  text-transform: uppercase;
+  color: #01383a;
+  padding: 16px 20px;
+  border: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 306px;
+    height: 70px;
+    font-size: 32px;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 0 8px 20px #86e54380, 0 4px 10px #ffffff1a;
+  }
+}
