@@ -5,12 +5,12 @@
   background-image: url(/src/images/accessories/bg-mob-1x.jpg),
     url(/src/images/accessories/bg-mob-1x.jpg);
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 256px;
     background-image: url(/src/images/accessories/bg-tab-1x.jpg),
       url(/src/images/accessories/bg-tab-1x.jpg);
   }
-  @media screen and(min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 256px;
     background-image: url(/src/images/accessories/bg-d-1x.jpg),
       url(/src/images/accessories/bg-d-1x.jpg);
@@ -43,13 +43,13 @@
     gap: 24px;
     margin-bottom: 32px;
   }
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 74px;
     & li:not(:last-child) {
       margin-right: 53px;
     }
   }
-  @media screen and(min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 72px;
     & li:not(:last-child) {
       margin-right: 44px;
@@ -94,23 +94,23 @@
   color: #ffffff;
   margin-left: 16px;
   margin-bottom: 27px;
-  @media screen and( min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-left: 142px;
     font-size: 56px;
     line-height: 1.17;
   }
 }
 .accessories-list {
-  @media screen and(max-width: 479px) {
+  @media screen and (max-width: 479px) {
     margin-bottom: 20px;
   }
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 24px 38px;
     justify-content: center;
   }
-  @media screen and(min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     gap: 24px 20px;
   }
 }

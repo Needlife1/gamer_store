@@ -17,12 +17,12 @@
 }
 .blog-lines {
   padding-top: 40px;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 120px;
   }
 }
 .blog .container {
-  @media screen and(max-width:479px) {
+  @media screen and (max-width: 479px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -55,7 +55,7 @@
   line-height: 1.18;
   color: #ffffff;
 
-  @media screen and(max-width:479px) {
+  @media screen and (max-width: 479px) {
     padding-left: 17px;
     padding-right: 18px;
   }
@@ -108,7 +108,7 @@
 
 .blog__description {
   margin-top: 8px;
-  @media screen and(max-width:479px) {
+  @media screen and (max-width: 479px) {
     padding-left: 17px;
     padding-right: 18px;
   }
@@ -179,7 +179,7 @@
   color: #ffffff;
   margin-top: 16px;
 
-  @media screen and(max-width:479px) {
+  @media screen and (max-width: 479px) {
     padding-left: 17px;
     padding-right: 18px;
   }
@@ -200,7 +200,7 @@
   line-height: 1.166;
   color: #ffffff;
   margin-bottom: 16px;
-  @media screen and(max-width:479px) {
+  @media screen and (max-width: 479px) {
     padding-left: 17px;
     padding-right: 18px;
   }
@@ -233,7 +233,7 @@
   line-height: 1;
   color: #86e543;
   margin-top: 8px;
-  @media screen and(max-width:479px) {
+  @media screen and (max-width: 479px) {
     padding-left: 17px;
     padding-right: 18px;
   }
