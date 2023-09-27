@@ -71,16 +71,12 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 24px;
   }
-}
-
-.sale-link {
   &:hover,
   &:focus {
     color: var(--btn-color);
     -webkit-text-shadow: 2px 2px 2px #000;
     -moz-text-shadow: 2px 2px 2px #000;
     text-shadow: 2px 2px 2px #000;
-    transform: scale(1.15);
   }
 }
 

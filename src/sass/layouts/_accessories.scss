@@ -57,16 +57,22 @@
   }
 }
 .accessories-button {
+  overflow: hidden;
+  transition: box-shadow 300ms, color 300ms;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 124px;
   padding: 8px 16px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   color: #86e543;
   background: transparent;
   cursor: pointer;
-  border: 1px solid #86e543;
+  border-left: 2px solid var(--glow-color);
+  border-right: 2px solid var(--glow-color);
   border-radius: 16px;
 
   @media screen and (min-width: 768px) {
@@ -78,13 +84,48 @@
     padding: 16px 48px;
     width: 168px;
   }
-
-  &:focus,
   &:hover {
-    color: #01383a;
-    background: #86e543;
-    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    color: var(--white-text-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+      0 0 4em 0.5em var(--glow-spread-color),
+      inset 0 0 0.75em 0.25em var(--glow-color);
   }
+  &:active {
+    border-color: var(--btn-color);
+  }
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: var(--btn-color);
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  &:before {
+    left: 0;
+    transform: translateX(-8em);
+  }
+  &:after {
+    right: 0;
+    transform: translateX(8em);
+  }
+  &:hover:before {
+    transform: translateX(-1em);
+  }
+  &:hover:after {
+    transform: translateX(1em);
+  }
+  &:active:before,
+  &:active:after {
+    background: teal;
+  }
+}
+
+.accessories-button p {
+  z-index: 1;
 }
 
 .accessories-title {
@@ -100,6 +141,7 @@
     line-height: 1.17;
   }
 }
+
 .accessories-list {
   @media screen and (max-width: 479px) {
     margin-bottom: 20px;
@@ -118,6 +160,13 @@
 .accessories-item {
   @media screen and (min-width: 768px) {
     max-width: 285px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--btn-color);
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
   }
 }
 
@@ -161,11 +210,13 @@
   color: #86e543;
   margin-bottom: 8px;
 }
+
 .accessories-price-list {
   display: flex;
   align-items: center;
   margin-bottom: 28px;
 }
+
 .accessories-old-price {
   font-weight: 600;
   font-size: 14px;
@@ -180,23 +231,4 @@
   font-size: 20px;
   line-height: 1;
   color: #86e543;
-}
-
-.accessories-points {
-}
-.accessories-point {
-  display: flex;
-  justify-content: center;
-  margin-top: 4px;
-}
-.accessories-pages__main {
-  display: none;
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
-.accessories-pages__acc {
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
 }

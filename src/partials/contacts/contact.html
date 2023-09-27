@@ -1,138 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts</title>
-    <link rel="stylesheet" href="/src/sass/index.scss" />
-    <script type="module" src="/src/index.js"></script>
-  </head>
-  <body>
-    <include src="./partials/main/header.html"></include>
-    <section class="contacts">
-      <div>
-        <div class="container-lines contact-lines">
-          <div class="line-left">
-            <h1 class="contacts__title">Contacts</h1>
-            <div class="line-b1"></div>
-            <div class="line-b2"></div>
-          </div>
-          <div class="line-right">
-            <div class="line-b3"></div>
-            <div class="line-b4"></div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts</title>
+  <link rel="stylesheet" href="/src/sass/index.scss" />
+  <script type="module" src="/src/index.js"></script>
+</head>
+
+<body>
+  <include src="./partials/main/header.html"></include>
+  <section class="contacts">
+    <div>
+      <div class="container-lines contact-lines">
+        <div class="line-left">
+          <h1 class="contacts__title">Contacts</h1>
+          <div class="line-b1"></div>
+          <div class="line-b2"></div>
         </div>
-        <div class="contacts__img">
-          <picture>
-            <source
-              srcset="
-                /src/images/contact/bannercontactsdesctop.jpg   1x,
-                /src/images/contact/bannercontactsdesctopx2.jpg 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                /src/images/contact/bannercontactstablet.jpg   1x,
-                /src/images/contact/bannercontactstabletx2.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                /src/images/contact/bannercontactsmob.jpg   1x,
-                /src/images/contact/bannercontactsmobx2.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              class="contacts__image"
-              src="/src/images/contact/bannercontactsdesctop.jpg"
-              alt="игровая консоль"
-            />
-          </picture>
-        </div>
-        <div class="contacts__page container">
-          <div>
-            <div class="contacts__block">
-              <p class="contacts__text">
-                In case of queries about order handling and/ or delay, drop us
-                an email at
-              </p>
-              <p>info@shopforgamers.com</p>
-            </div>
-            <div class="contacts__connection">
-              <div class="contacts__mail">
-                <ul class="contacts_info-list">
-                  <li class="contacts__info-item">
-                    <p class="contacts__info-title">Email</p>
-                    <a class="contacts__data" href="mailto:sfg.info@gmail.com"
-                      >sfg.info@gmail.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="contacts__phone">
-                <p class="contacts__info-title">Phone number</p>
-                <ul class="contacts_info-list">
-                  <li class="contacts__info-item">
-                    <a class="contacts__data" href="tel:+380936432288">
-                      +38 (093) 643 22 88</a
-                    >
-                  </li>
-                  <li class="contacts__info-item">
-                    <a class="contacts__data" href="tel:+380503454423"
-                      >+38 (050) 345 44 23</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="contacts__form">
-            <h2 class="contacts__form-title">CONTACT US</h2>
-            <form class="contacts__form-name">
-              <label for="name" class="contacts__label-name">
-                <input
-                  class="contacts__form-input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Name"
-                  required
-                />
-              </label>
-              <label for="mail" class="contacts__label-name">
-                <input
-                  class="contacts__form-input"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                  placeholder="Email"
-                  required
-                />
-              </label>
-              <label class="comment__title" for="comment"
-                >Leave your message</label
-              >
-              <textarea
-                class="contacts__message-input"
-                name="comment"
-                id="comment"
-                rows="6"
-                placeholder="Leave your comment, it's important for us"
-                required
-              ></textarea>
-              <button data-modal-open type="button" class="contacts__button">
-                SEND
-              </button>
-            </form>
-          </div>
+        <div class="line-right">
+          <div class="line-b3"></div>
+          <div class="line-b4"></div>
         </div>
       </div>
-      <include src="./partials/contacts/contmodal.html"></include>
-    </section>
-    <include src="./partials/main/footer.html"></include>
-    <script src="/src/modal.js"></script>
-  </body>
+      <div class="contacts__img">
+        <picture>
+          <source srcset="
+                /src/images/contact/bannercontactsdesctop.jpg   1x,
+                /src/images/contact/bannercontactsdesctopx2.jpg 2x
+              " media="(min-width: 1200px)" />
+          <source srcset="
+                /src/images/contact/bannercontactstablet.jpg   1x,
+                /src/images/contact/bannercontactstabletx2.jpg 2x
+              " media="(min-width: 768px)" />
+          <source srcset="
+                /src/images/contact/bannercontactsmob.jpg   1x,
+                /src/images/contact/bannercontactsmobx2.jpg 2x
+              " media="(max-width: 767px)" />
+          <img class="contacts__image" src="/src/images/contact/bannercontactsdesctop.jpg" alt="игровая консоль" />
+        </picture>
+      </div>
+      <div class="contacts__page container">
+        <div>
+          <div class="contacts__block">
+            <p class="contacts__text">
+              In case of queries about order handling and/ or delay, drop us
+              an email at
+            </p>
+            <a class="contacts__data" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
+          </div>
+          <div class="contacts__connection">
+            <div class="contacts__mail">
+              <ul class="contacts_info-list">
+                <li class="contacts__info-item">
+                  <p class="contacts__info-title">Email</p>
+                  <a class="contacts__data" href="mailto:sfg.info@gmail.com">sfg.info@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__phone">
+              <p class="contacts__info-title">Phone number</p>
+              <ul class="contacts_info-list">
+                <li class="contacts__info-item">
+                  <a class="contacts__data" href="tel:+380936432288">
+                    +38 (093) 643 22 88</a>
+                </li>
+                <li class="contacts__info-item">
+                  <a class="contacts__data" href="tel:+380503454423">+38 (050) 345 44 23</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__form">
+          <h2 class="contacts__form-title">CONTACT US</h2>
+          <form class="contacts__form-name">
+            <label for="name" class="contacts__label-name">
+              <input class="contacts__form-input" type="text" name="name" id="name" placeholder="Name" required />
+            </label>
+            <label for="mail" class="contacts__label-name">
+              <input class="contacts__form-input" type="email" name="mail" id="mail" placeholder="Email" required />
+            </label>
+            <label class="comment__title" for="comment">Leave your message</label>
+            <textarea class="contacts__message-input" name="comment" id="comment" rows="6"
+              placeholder="Leave your comment, it's important for us" required></textarea>
+            <button data-modal-open type="button" class="contacts__button">
+              SEND
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <include src="./partials/contacts/contmodal.html"></include>
+  </section>
+  <include src="./partials/main/footer.html"></include>
+  <script src="/src/modal.js"></script>
+</body>
+
 </html>
