@@ -1,32 +1,31 @@
-@import "./common";
-@import "./base/fonts";
-@import "./utils/mixins";
-@import "./base/base";
-@import "./base/reset";
-@import "./base/lines";
-@import "./utils/hidden";
-@import "./base/vars";
-@import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/gallery";
-@import "./layouts/sale";
-@import "./layouts/footer";
-@import "./layouts/accessories";
-@import "./layouts/takeorder";
-@import "./layouts/tomodal1";
-@import "./layouts/tomodal2";
-@import "./layouts/blog";
-@import "./layouts/blog_article";
-@import "./layouts/contact";
-@import "./layouts/contmodal";
+@import './common';
+@import './base/fonts';
+@import './utils/mixins';
+@import './base/base';
+@import './base/reset';
+@import './base/lines';
+@import './utils/hidden';
+@import './base/vars';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/gallery';
+@import './layouts/sale';
+@import './layouts/footer';
+@import './layouts/accessories';
+@import './layouts/takeorder';
+@import './layouts/tomodal1';
+@import './layouts/blog';
+@import './layouts/blog_article';
+@import './layouts/contact';
+@import './layouts/contmodal';
 
 .link-body {
-	position: relative;
-	font-size: 15px;
-	z-index: 200;
-	margin-left: 20%;
+  position: relative;
+  font-size: 15px;
+  z-index: 200;
+  margin-left: 20%;
 }
 .link-body a {
-	margin-right: 30px;
-	margin-left: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
 }

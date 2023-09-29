@@ -76,16 +76,23 @@
         <div class="contacts__form">
           <h2 class="contacts__form-title">CONTACT US</h2>
           <form class="contacts__form-name">
-            <label for="name" class="contacts__label-name">
-              <input class="contacts__form-input" type="text" name="name" id="name" placeholder="Name" required />
-            </label>
-            <label for="mail" class="contacts__label-name">
-              <input class="contacts__form-input" type="email" name="mail" id="mail" placeholder="Email" required />
-            </label>
-            <label class="comment__title" for="comment">Leave your message</label>
-            <textarea class="contacts__message-input" name="comment" id="comment" rows="6"
-              placeholder="Leave your comment, it's important for us" required></textarea>
-            <button data-modal-open type="button" class="contacts__button">
+
+            <div class="form__group field">
+              <input type="text" class="form__field" name="name" id="name" placeholder="Name" required>
+              <label for="name" class="form__label">Name</label>
+            </div>
+
+            <div class="form__group">
+              <input type="email" class="form__field" name="mail" placeholder="Email" required>
+              <label for="email" class="form__label">Email</label>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="comment">Leave your message</label>
+              <textarea class="contacts__message-input" name="comment" id="comment" rows="6" required></textarea>
+            </div>
+
+            <button data-modal-open type="button" class="contacts__button link">
               SEND
             </button>
           </form>
@@ -95,7 +102,7 @@
     <include src="./partials/contacts/contmodal.html"></include>
   </section>
   <include src="./partials/main/footer.html"></include>
-  <script src="/src/modal.js"></script>
+  <script src="../../js/modal.js"></script>
 </body>
 
 </html>
