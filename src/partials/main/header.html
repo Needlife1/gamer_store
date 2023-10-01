@@ -1,15 +1,20 @@
 <header class="header">
   <div class="header__container">
     <nav class="header__navigation">
-      <a href="/src/index.html" class="header__logo">
+      <a href="/src/index.html" class="header__logo hover">
         <p class="shadow-text">SHOP FOR GAMERS</p>
       </a>
-      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="menu-container">
-        <svg width="54" height="36" aria-label="Перемикач мобільного меню">
-          <use class="icon__burger" href="/src/icon/symbol-defs.svg#icon_burger"></use>
-          <use class="icon__cross" href="/src/icon/symbol-defs.svg#icon_cross"></use>
-        </svg>
-      </button>
+
+
+      <div class="menu__btn-background">
+        <button class="menu__btn" type="button" data-menu-button aria-expanded="false" aria-controls="menu-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+
       <div class="menu-container" id="menu-container" data-menu>
         <ul class="header__list">
           <li class="header__item">
@@ -38,7 +43,7 @@
           </li>
         </ul>
       </div>
-      <a href="/src/partials/access/accessories.html" class="shop-now">shop now</a>
+      <a href="/src/partials/access/accessories.html" class="link shop-now">shop now</a>
     </nav>
   </div>
 </header>

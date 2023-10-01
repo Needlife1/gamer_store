@@ -69,7 +69,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
-  color: #86e543;
+  color: var(--btn-color);
   background: transparent;
   cursor: pointer;
   border-left: 2px solid var(--glow-color);
@@ -133,7 +133,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
-  color: #ffffff;
+  color: var(--white-text-color);
   margin-left: 16px;
   margin-bottom: 27px;
   @media screen and (min-width: 768px) {
@@ -162,18 +162,11 @@
   @media screen and (min-width: 768px) {
     max-width: 285px;
   }
-  &:hover,
-  &:focus {
-    color: var(--btn-color);
-    -webkit-text-shadow: 2px 2px 2px #000;
-    -moz-text-shadow: 2px 2px 2px #000;
-    text-shadow: 2px 2px 2px #000;
-  }
 }
 
 .accessories-wrap {
   background: linear-gradient(0deg, #01383a, #01383a);
-  border: 1px solid #86e543;
+  border: 1px solid var(--btn-color);
   box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
   border-radius: 12px;
 
@@ -186,21 +179,22 @@
   font-size: 14px;
   line-height: 1.142;
   margin-bottom: 11px;
-  background-color: #01383a;
+  background-color: var(--main-color);
   position: absolute;
   top: 0;
   left: 0;
-  color: #ffffff;
+  color: var(--white-text-color);
   padding: 16px 16px 52px 16px;
   height: 100%;
-
   transform: translateY(100%);
   transition: transform 250ms;
   transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
   overflow: hidden;
-  .accessories-link:hover &,
-  .accessories-link:focus & {
-    transform: translate(0);
+  @media screen and (min-width: 768px) {
+    .accessories-link:hover &,
+    .accessories-link:focus & {
+      transform: translate(0);
+    }
   }
 }
 
@@ -208,7 +202,7 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 1.18;
-  color: #86e543;
+  color: var(--btn-color);
   margin-bottom: 8px;
 }
 
@@ -223,7 +217,7 @@
   font-size: 14px;
   line-height: 1;
   text-decoration-line: line-through;
-  color: #8d9289;
+  color: var(--gray-text-color);
   margin-right: 80px;
 }
 
@@ -231,5 +225,5 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1;
-  color: #86e543;
+  color: var(--btn-color);
 }

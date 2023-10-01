@@ -71,7 +71,7 @@
   font-size: 32px;
   line-height: 38px;
 
-  color: #ffffff;
+  color: var(--white-text-color);
 
   margin-top: 35px;
   margin-bottom: 16px;
@@ -137,7 +137,7 @@
 
     text-decoration-line: line-through;
 
-    color: #8d9289;
+    color: var(--gray-text-color);
   }
 
   @media screen and (min-width: 1280px) {
@@ -153,7 +153,7 @@
   line-height: 100%;
   margin-left: auto;
 
-  color: #86e543;
+  color: var(--btn-color);
 
   margin-bottom: 16px;
 
@@ -169,7 +169,7 @@
     font-size: 48px;
     line-height: 100%;
 
-    color: #86e543;
+    color: var(--btn-color);
   }
 
   @media screen and (min-width: 1280px) {
@@ -198,27 +198,32 @@
   justify-content: center;
 }
 
+.order__form-text {
+  color: var(--white-text-color);
+  margin-bottom: 25px;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
 .order__form-title {
   font-family: 'Roboto Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-
-  color: #86e543;
+  color: var(--btn-color);
 
   @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 36px;
     line-height: 42px;
-
-    color: #86e543;
+    color: var(--btn-color);
   }
 }
 
 .order__cont-form {
   margin-top: 16px;
-
   @media screen and (min-width: 768px) {
     justify-content: center;
     margin-left: auto;
@@ -251,7 +256,7 @@
   outline: none;
   background: transparent;
   cursor: pointer;
-  border-bottom: 1px solid #86e543;
+  border-bottom: 1px solid var(--btn-color);
   margin-bottom: 5px;
   height: 24px;
   font-size: 18px;
@@ -259,13 +264,14 @@
   text-transform: capitalize;
   color: var(--gray-text-color);
   &:focus {
-    box-shadow: 0px 6px 14px -8px #86e543;
+    box-shadow: 0px 6px 14px -8px var(--btn-color);
   }
 }
 
 .select-wrapper {
   position: relative;
 }
+
 .select-wrapper::after {
   content: '';
   position: absolute;
@@ -273,38 +279,36 @@
   right: 15px;
   transform: translateY(-100%);
   display: block;
-
   pointer-events: none;
-
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 13px 9px 0 9px;
-  border-color: #ffffff transparent transparent transparent;
+  border-color: var(--white-text-color) transparent transparent transparent;
 }
 
-.order__form-input {
-  width: 100%;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.11;
-  color: #ffffff;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #86e543;
-  margin-bottom: 40px;
+// .order__form-input {
+//   width: 100%;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.11;
+//   color: var(--white-text-color);
+//   background-color: transparent;
+//   border: none;
+//   border-bottom: 1px solid var(--btn-color);
+//   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 590px;
-    font-size: 18px;
-    line-height: 20px;
-    text-transform: capitalize;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     justify-content: center;
+//     display: flex;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 590px;
+//     font-size: 18px;
+//     line-height: 20px;
+//     text-transform: capitalize;
+//   }
+// }
 
 .order__cont-mod {
   position: relative;
@@ -319,6 +323,17 @@
   }
 }
 
+.order__message-label {
+  position: absolute;
+  top: -25;
+  left: 5;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: var(--btn-color);
+  pointer-events: none;
+}
+
 .order__message-input {
   width: 100%;
   resize: none;
@@ -326,7 +341,7 @@
   outline: transparent;
   background-color: transparent;
   margin-bottom: 24px;
-  color: #ffffff;
+  color: var(--white-text-color);
   height: 150px;
 
   @media screen and (min-width: 768px) {
@@ -341,24 +356,14 @@
   }
 }
 
-.order__message-label {
-  position: absolute;
-  top: -25;
-  left: 5;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: var(--btn-color);
-  pointer-events: none;
-}
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  font-weight: 700;
-}
+// .form__field:focus ~ .form__label {
+//   position: absolute;
+//   top: 0;
+//   display: block;
+//   transition: 0.2s;
+//   font-size: 17px;
+//   font-weight: 700;
+// }
 
 .order-btn {
   justify-content: center;

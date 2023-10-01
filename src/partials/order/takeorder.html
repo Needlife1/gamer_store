@@ -33,7 +33,7 @@
             " media="(max-width:1279px)" />
 
         <img class="order-product-img-hero" src="/src/images/order/images/Rectangle-4279.jpg" width="288"
-          alt="headphones" />
+          alt="headphones" loading="lazy" />
       </picture>
       <ul class="order-sale-list">
         <li class="order-sale-up">65.14 USD</li>
@@ -54,7 +54,8 @@
                   /src/images/order/images/mob/Rectangle2-mob-x1.jpg 1x,
                   /src/images/order/images/mob/Rectangle2-mob-x2.jpg 2x
                 " media="(min-width:480px)" />
-            <img class="order-item-img" src="/src/images/order/images/Rectangle-4280.jpg" width="60" alt="headphones" />
+            <img class="order-item-img" src="/src/images/order/images/Rectangle-4280.jpg" width="60" alt="headphones"
+              loading="lazy" />
           </picture>
         </li>
         <li class="order-item">
@@ -71,7 +72,8 @@
                   /src/images/order/images/mob/Rectangle3-mob-x1.jpg 1x,
                   /src/images/order/images/mob/Rectangle3-mob-x2.jpg 2x
                 " media="(min-width:320px)" />
-            <img class="order-item-img" src="/src/images/order/images/Rectangle-4281.jpg" width="60" alt="headphones" />
+            <img class="order-item-img" src="/src/images/order/images/Rectangle-4281.jpg" width="60" alt="headphones"
+              loading="lazy" />
           </picture>
         </li>
         <li class="order-item">
@@ -88,7 +90,8 @@
                     /src/images/order/images/mob/Rectangle4-mob-x1.jpg x1,
                     /src/images/order/images/mob/Rectangle4-mob-x2.jpg 2x
                     " media="(min-width:480px)" />
-            <img class="order-item-img" src="/src/images/order/images/Rectangle-4282.jpg" width="60" alt="headphones" />
+            <img class="order-item-img" src="/src/images/order/images/Rectangle-4282.jpg" width="60" alt="headphones"
+              loading="lazy" />
           </picture>
         </li>
         <li class="order-item">
@@ -105,7 +108,8 @@
                   /src/images/order/images/mob/Rectangle5-mob-x1.jpg 1x,
                   /src/images/order/images/mob/Rectangle5-mob-x2.jpg 2x
                 " media="(max-width:480px)" />
-            <img class="order-item-img" src="/src/images/order/images/Rectangle-4283.jpg" width="60" alt="headphones" />
+            <img class="order-item-img" src="/src/images/order/images/Rectangle-4283.jpg" width="60" alt="headphones"
+              loading="lazy" />
           </picture>
         </li>
       </ul>
@@ -119,7 +123,7 @@
             " media="(min-width:1280px)" />
 
         <img class="order-product-img-hero" src="/src/images/order/images/Rectangle-4279.jpg" max-width="288"
-          alt="headphones" />
+          alt="headphones" loading="lazy" />
       </picture>
       <div class="order-position-right">
         <p class="order-text list-item">Xiberia K9 PRO PC Headset</p>
@@ -146,7 +150,7 @@
                       /src/images/order/images/mob/Rectangle2-mob-x2.jpg 2x
                     " media="(min-width:480px)" />
                 <img class="order-item-img" src="/src/images/order/images/Rectangle-4280.jpg" width="60"
-                  alt="headphones" />
+                  alt="headphones" loading="lazy" />
               </picture>
             </li>
             <li class="order-item">
@@ -164,7 +168,7 @@
                       /src/images/order/images/mob/Rectangle3-mob-x2.jpg 2x
                     " media="(min-width:480px)" />
                 <img class="order-item-img" src="/src/images/order/images/Rectangle-4281.jpg" width="60"
-                  alt="headphones" />
+                  alt="headphones" loading="lazy" />
               </picture>
             </li>
             <li class="order-item">
@@ -182,7 +186,7 @@
           /src/images/order/images/mob/Rectangle4-mob-x2.jpg 2x
           " media="(min-width:320px)" />
                 <img class="order-item-img" src="/src/images/order/images/Rectangle-4282.jpg" width="60"
-                  alt="headphones" />
+                  alt="headphones" loading="lazy" />
               </picture>
             </li>
             <li class="order-item">
@@ -200,7 +204,7 @@
                       /src/images/order/images/mob/Rectangle5-mob-x2.jpg 2x
                     " media="(min-width:480px)" />
                 <img class="order-item-img" src="/src/images/order/images/Rectangle-4283.jpg" width="60"
-                  alt="headphones" />
+                  alt="headphones" loading="lazy" />
               </picture>
             </li>
           </ul>
@@ -208,17 +212,27 @@
       </div>
     </div>
     <div class="order-sec-mod container">
+
+      <p class="order__form-text">
+        100% Brand new and high quality! Ergonomic in design makes it
+        more adjustable to use. More fashionable for your daily use,
+        such as playing games. Built-in high sensitivity and noise
+        reduction microphone. It is not easy to break or deform, and
+        wear comfortable, no pressure.
+      </p>
+
       <h3 class="order__form-title">CONTACT US</h3>
-      <div class="order__cont-form">
+
+      <form class="order__cont-form">
         <div class="order__cont">
 
           <div class="form__group " style="margin-bottom: 20px;">
-            <input type="text" class="form__field " name="name" id="name" placeholder="Name" required>
+            <input type="text" class="form__field " name="name" id="name" placeholder="Name" required maxlength="25">
             <label for="name" class="form__label">Name</label>
           </div>
 
           <div class="form__group" style="margin-bottom: 20px;">
-            <input type="email" class="form__field " name="mail" placeholder="Email" required>
+            <input type="email" class="form__field " name="mail" placeholder="Email" required maxlength="50">
             <label for="email" class="form__label">Email</label>
           </div>
 
@@ -250,11 +264,11 @@
         <div class="order__cont-mod">
 
           <label class="order__message-label" for="message">Leave your message</label>
-          <textarea class="order__message-input" name="message" id="comment" required></textarea>
+          <textarea class="order__message-input" name="message" id="comment"></textarea>
 
         </div>
 
-      </div>
+      </form>
 
     </div>
     <div class="order-btn">

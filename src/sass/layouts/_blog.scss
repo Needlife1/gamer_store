@@ -53,7 +53,7 @@
   font-weight: 600;
   font-size: 56px;
   line-height: 1.18;
-  color: #ffffff;
+  color: var(--white-text-color);
 
   @media screen and (max-width: 479px) {
     padding-left: 17px;
@@ -135,7 +135,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1;
-  color: #ffffff;
+  color: var(--white-text-color);
 
   margin-top: 8px;
 
@@ -157,7 +157,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
-  color: #8d9289;
+  color: var(--gray-text-color);
   margin-top: 8px;
   margin-bottom: auto;
 
@@ -179,7 +179,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
-  color: #ffffff;
+  color: var(--white-text-color);
   margin-top: 16px;
 
   @media screen and (max-width: 479px) {
@@ -201,7 +201,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1.166;
-  color: #ffffff;
+  color: var(--white-text-color);
   margin-bottom: 16px;
   @media screen and (max-width: 479px) {
     padding-left: 17px;
@@ -238,10 +238,6 @@
   transition: all 0.5s ease;
   &:hover,
   &:focus {
-    color: var(--btn-color);
-    -webkit-text-shadow: 2px 2px 2px #000;
-    -moz-text-shadow: 2px 2px 2px #000;
-    text-shadow: 2px 2px 2px #000;
     transform: translateY(-5px);
   }
   @media screen and (max-width: 479px) {
@@ -254,6 +250,6 @@
   }
 }
 
-.desk {
-  top: 192px;
-}
+// .desk {
+//   top: 192px;
+// }

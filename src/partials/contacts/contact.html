@@ -38,7 +38,8 @@
                 /src/images/contact/bannercontactsmob.jpg   1x,
                 /src/images/contact/bannercontactsmobx2.jpg 2x
               " media="(max-width: 767px)" />
-          <img class="contacts__image" src="/src/images/contact/bannercontactsdesctop.jpg" alt="игровая консоль" />
+          <img class="contacts__image" src="/src/images/contact/bannercontactsdesctop.jpg" alt="игровая консоль"
+            loading="lazy" />
         </picture>
       </div>
       <div class="contacts__page container">
@@ -48,14 +49,14 @@
               In case of queries about order handling and/ or delay, drop us
               an email at
             </p>
-            <a class="contacts__data" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
+            <a class="contacts__data hover" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
           </div>
           <div class="contacts__connection">
             <div class="contacts__mail">
               <ul class="contacts_info-list">
                 <li class="contacts__info-item">
                   <p class="contacts__info-title">Email</p>
-                  <a class="contacts__data" href="mailto:sfg.info@gmail.com">sfg.info@gmail.com</a>
+                  <a class="contacts__data hover" href="mailto:sfg.info@gmail.com">sfg.info@gmail.com</a>
                 </li>
               </ul>
             </div>
@@ -63,11 +64,11 @@
               <p class="contacts__info-title">Phone number</p>
               <ul class="contacts_info-list">
                 <li class="contacts__info-item">
-                  <a class="contacts__data" href="tel:+380936432288">
+                  <a class="contacts__data hover" href="tel:+380936432288">
                     +38 (093) 643 22 88</a>
                 </li>
                 <li class="contacts__info-item">
-                  <a class="contacts__data" href="tel:+380503454423">+38 (050) 345 44 23</a>
+                  <a class="contacts__data hover" href="tel:+380503454423">+38 (050) 345 44 23</a>
                 </li>
               </ul>
             </div>
@@ -78,23 +79,22 @@
           <form class="contacts__form-name">
 
             <div class="form__group field">
-              <input type="text" class="form__field" name="name" id="name" placeholder="Name" required>
+              <input type="text" class="form__field" name="name" id="name" placeholder="Name" required maxlength="25">
               <label for="name" class="form__label">Name</label>
             </div>
 
             <div class="form__group">
-              <input type="email" class="form__field" name="mail" placeholder="Email" required>
+              <input type="email" class="form__field" name="mail" placeholder="Email" required maxlength="50">
               <label for="email" class="form__label">Email</label>
             </div>
 
             <div class="form__group">
               <label class="form__label" for="comment">Leave your message</label>
-              <textarea class="contacts__message-input" name="comment" id="comment" rows="6" required></textarea>
+              <textarea class="order__message-input" name="comment" id="comment" rows="6"></textarea>
             </div>
 
-            <button data-modal-open type="button" class="contacts__button link">
-              SEND
-            </button>
+            <button data-modal-open type="button" class="contacts__button link">SEND</button>
+
           </form>
         </div>
       </div>
