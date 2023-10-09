@@ -1830,6 +1830,7 @@ button {
   .order__cont-form {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
   }
 }
 
@@ -1941,22 +1942,7 @@ button {
 }
 
 .order-btn {
-  justify-content: center;
-  gap: 10px;
-  padding-top: 24px;
-  flex-wrap: wrap;
-  display: grid;
-}
-@media screen and (min-width: 768px) {
-  .order-btn {
-    gap: 24px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .order-btn {
-    display: flex;
-    margin-top: 48px;
-  }
+  margin: 48px auto 0 auto;
 }
 
 .backdrop {
@@ -1975,7 +1961,7 @@ button {
   background: #01383a;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
 }
