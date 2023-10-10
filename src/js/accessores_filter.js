@@ -2,8 +2,6 @@ try {
   const filterBtn = document.querySelector('.accessories-items');
   const itemsAccessories = document.querySelectorAll('.accessories-item');
 
-  console.log(filterBtn);
-
   filterBtn.addEventListener('click', filterAccessories);
 
   function filterAccessories(e) {

@@ -40,10 +40,14 @@ try {
 
 // --------------------modalCloseBtn------------------------------
 
-const modalCloseBtn = document.querySelector('.dismiss');
+try {
+  const modalCloseBtn = document.querySelector('.dismiss');
 
-modalCloseBtn.addEventListener('click', closeModal);
+  modalCloseBtn.addEventListener('click', closeModal);
 
-function closeModal() {
-  backdrop.classList.add('is-hidden');
+  function closeModal() {
+    backdrop.classList.add('is-hidden');
+  }
+} catch (error) {
+  console.log(error);
 }
