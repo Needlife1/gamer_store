@@ -24,30 +24,15 @@ try {
     return sanitizedValue;
   }
 
-  nameInput.addEventListener(
-    'keydown',
-    _.throttle(e => {
-      if (e.key >= '0' && e.key <= '9') {
-        Notify.failure('You need to enter letters!!!');
-        e.preventDefault();
-      }
-    }, 1500)
-  );
+  nameInput.addEventListener('keydown', _.throttle(numberCheck, 1500));
+
+  function numberCheck(e) {
+    if (e.key >= '0' && e.key <= '9') {
+      Notify.failure('You need to enter letters!!!');
+      e.preventDefault();
+    }
+  }
 } catch (error) {
   console.log(error.name);
   console.log(error.message);
-}
-
-// --------------------modalCloseBtn------------------------------
-
-try {
-  const modalCloseBtn = document.querySelector('.dismiss');
-
-  modalCloseBtn.addEventListener('click', closeModal);
-
-  function closeModal() {
-    backdrop.classList.add('is-hidden');
-  }
-} catch (error) {
-  console.log(error);
 }
